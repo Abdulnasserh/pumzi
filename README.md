@@ -167,6 +167,8 @@ desktop/
 **PUMZI is free, and it would love to stay that way.**
 If it saved your eyes, your back, or your afternoon — consider [sponsoring the project ☕](https://github.com/sponsors/Abdulnasserh).
 
+Want to help? PRs welcome — [CONTRIBUTING.md](CONTRIBUTING.md) has everything you need (adding a break is the easiest start).
+
 <sub>Break content adapted from the original Noodle project. MIT licensed.</sub>
 
 </div>
