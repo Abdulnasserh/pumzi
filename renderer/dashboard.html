@@ -1,0 +1,252 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="color-scheme" content="light dark">
+<title>PUMZI</title>
+<link rel="stylesheet" href="dashboard.css">
+</head>
+<body>
+  <div class="shell">
+    <header class="top">
+      <div class="brand">
+        <div class="logo" aria-hidden="true">
+          <svg viewBox="0 0 32 32"><path d="M5 9c3-3 6 3 9 0s6-3 9 0 6 3 4 7-8 3-9 7-6 4-9 1-5-7-4-10 3 1 0 0z"/></svg>
+        </div>
+        <div>
+          <h1>PUMZI</h1>
+          <p>Pomodoro focus tasks with built-in micro-breaks.</p>
+        </div>
+      </div>
+      <label class="pause">
+        <span id="pauseLabel">Reminders on</span>
+        <input type="checkbox" id="paused" role="switch">
+        <i></i>
+      </label>
+    </header>
+
+    <section class="hero">
+      <div class="hero-copy">
+        <span class="eyebrow" id="statusEyebrow">Next break</span>
+        <div class="countdown" id="countdown">20:00</div>
+        <p id="statusDetail">A card will slide in from the corner. It never steals focus.</p>
+        <div class="hero-actions">
+          <button class="primary" id="takeBreak">Take a break now</button>
+          <button class="ghost" id="openFirst" hidden>Start with a stretch</button>
+        </div>
+      </div>
+      <div class="hero-art" aria-hidden="true">
+        <svg viewBox="0 0 200 150">
+          <defs>
+            <linearGradient id="glow" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0" stop-color="#F6C177" stop-opacity=".55"/>
+              <stop offset="1" stop-color="#F6C177" stop-opacity="0"/>
+            </linearGradient>
+          </defs>
+          <circle cx="100" cy="78" r="54" fill="url(#glow)"/>
+          <path class="noodle-path" d="M42 92c8-8 16 8 24 0s16-8 24 0 16 8 24 0 16-8 24 0 16 8 20 2" />
+          <path class="noodle-path thin" d="M48 72c7-7 14 7 21 0s14-7 21 0 14 7 21 0 14-7 21 0" />
+          <circle cx="56" cy="108" r="4" class="dot"/>
+          <circle cx="144" cy="58" r="3" class="dot"/>
+          <circle cx="120" cy="114" r="2.4" class="dot"/>
+        </svg>
+      </div>
+    </section>
+
+    <section class="panel focus-panel">
+      <div class="panel-head">
+        <div>
+          <span class="eyebrow">Pomodoro</span>
+          <h2>Focus task</h2>
+          <p>Give a task a focus budget. PUMZI splits it into 25-minute sessions with 5-minute breaks, and a 15-minute break after four. An alarm and notification fire when a break is due.</p>
+        </div>
+        <span class="focus-pill">25 / 5</span>
+      </div>
+
+      <div class="task-active" id="taskActive" hidden>
+        <div class="task-clock">
+          <span class="task-timer" id="taskTimer">25:00</span>
+          <span class="task-cycle" id="taskCycle">Focus session 1 of 2</span>
+        </div>
+        <div class="task-active-copy">
+          <span class="eyebrow" id="taskPhase">Focus</span>
+          <b id="taskActiveTitle">Task</b>
+          <small id="taskProgressText">0% of 50 focus minutes</small>
+          <div class="task-progress"><i id="taskProgress"></i></div>
+        </div>
+        <button class="ghost task-stop" id="stopTask">End task</button>
+      </div>
+
+      <form class="task-form" id="taskForm">
+        <input type="text" id="taskTitle" placeholder="What are you working on?" maxlength="80" autocomplete="off" required>
+        <label class="task-minutes">
+          <span>Focus</span>
+          <input type="number" id="taskMinutes" min="5" max="480" step="5" value="50">
+          <span>min</span>
+        </label>
+        <button class="primary" type="submit">Add task</button>
+      </form>
+
+      <div class="task-list" id="taskList"></div>
+    </section>
+
+    <section class="stats" aria-label="Your break stats">
+      <article class="stat">
+        <span class="stat-label">Today</span>
+        <strong id="statToday">0</strong>
+        <span class="stat-foot">breaks</span>
+      </article>
+      <article class="stat">
+        <span class="stat-label">Streak</span>
+        <strong id="statStreak">0</strong>
+        <span class="stat-foot" id="streakFoot">days in a row</span>
+      </article>
+      <article class="stat">
+        <span class="stat-label">All time</span>
+        <strong id="statTotal">0</strong>
+        <span class="stat-foot">breaks taken</span>
+      </article>
+      <article class="stat">
+        <span class="stat-label">Time back</span>
+        <strong id="statMinutes">0</strong>
+        <span class="stat-foot">minutes moved</span>
+      </article>
+      <article class="chart-card">
+        <div class="chart-head"><span>Last 7 days</span><span id="chartTotal">0 breaks</span></div>
+        <div class="chart" id="chart"></div>
+      </article>
+    </section>
+
+    <div class="columns">
+      <section class="panel">
+        <div class="panel-head">
+          <div>
+            <h2>Reminders</h2>
+            <p>How often PUMZI taps you on the shoulder.</p>
+          </div>
+          <span class="saved" id="saved">Saved</span>
+        </div>
+
+        <div class="rows">
+          <label class="row">
+            <span class="row-copy"><b>Remind me every</b><small>One card at a time, never in a burst.</small></span>
+            <select id="interval">
+              <option value="5">5 minutes</option>
+              <option value="10">10 minutes</option>
+              <option value="15">15 minutes</option>
+              <option value="20">20 minutes</option>
+              <option value="25">25 minutes</option>
+              <option value="30">30 minutes</option>
+              <option value="45">45 minutes</option>
+              <option value="60">60 minutes</option>
+              <option value="90">90 minutes</option>
+            </select>
+          </label>
+
+          <label class="row">
+            <span class="row-copy"><b>Snooze length</b><small>When you hit Snooze on a card.</small></span>
+            <select id="snooze">
+              <option value="5">5 minutes</option>
+              <option value="10">10 minutes</option>
+              <option value="15">15 minutes</option>
+              <option value="20">20 minutes</option>
+              <option value="30">30 minutes</option>
+            </select>
+          </label>
+
+          <label class="row">
+            <span class="row-copy"><b>Card corner</b><small>Where the break card slides in.</small></span>
+            <select id="position">
+              <option value="bottom-right">Bottom right</option>
+              <option value="bottom-left">Bottom left</option>
+              <option value="top-right">Top right</option>
+              <option value="top-left">Top left</option>
+            </select>
+          </label>
+
+          <div class="row stack">
+            <span class="row-copy"><b>Quiet hours</b><small id="quietHint">No cards during this window.</small></span>
+            <div class="quiet-controls">
+              <label class="switch small">
+                <input type="checkbox" id="quietEnabled">
+                <i></i>
+              </label>
+              <input type="time" id="quietStart" aria-label="Quiet hours start">
+              <span>to</span>
+              <input type="time" id="quietEnd" aria-label="Quiet hours end">
+            </div>
+          </div>
+
+          <label class="row">
+            <span class="row-copy"><b>Reset after time away</b><small>Five minutes away counts as a break. The clock starts over when you're back.</small></span>
+            <span class="switch"><input type="checkbox" id="resetWhenAway"><i></i></span>
+          </label>
+        </div>
+      </section>
+
+      <section class="panel">
+        <div class="panel-head">
+          <div>
+            <h2>Break mix</h2>
+            <p>Turn types on or off. The rotation stays balanced.</p>
+          </div>
+        </div>
+        <div class="mix" id="mix"></div>
+      </section>
+
+      <section class="panel">
+        <div class="panel-head">
+          <div>
+            <h2>Behavior</h2>
+            <p>Small choices that make breaks easier to take.</p>
+          </div>
+        </div>
+        <div class="rows">
+          <label class="row">
+            <span class="row-copy"><b>Sound</b><small>A soft chime when a card arrives or a set is done.</small></span>
+            <span class="switch"><input type="checkbox" id="sound"><i></i></span>
+          </label>
+          <label class="row">
+            <span class="row-copy"><b>Show steps automatically</b><small>Open the How to section on every card.</small></span>
+            <span class="switch"><input type="checkbox" id="expandSteps"><i></i></span>
+          </label>
+          <label class="row">
+            <span class="row-copy"><b>Open at login</b><small>Keep PUMZI ready when you start your computer.</small></span>
+            <span class="switch"><input type="checkbox" id="launchAtLogin"><i></i></span>
+          </label>
+          <div class="row">
+            <span class="row-copy"><b>Your data</b><small id="dataHint">No account. Everything stays on this computer.</small></span>
+            <button class="text danger" id="resetStats">Reset stats</button>
+          </div>
+        </div>
+      </section>
+
+      <section class="panel accent-panel">
+        <div class="panel-head">
+          <div>
+            <h2>How it works</h2>
+            <p>A Pomodoro companion for long desktop sessions, built on Noodle.</p>
+          </div>
+        </div>
+        <ul class="how">
+          <li><span>1</span><div><b>A card slides in.</b> It floats above other windows but never takes keyboard focus.</div></li>
+          <li><span>2</span><div><b>Start the timer.</b> Follow the move for the set length, or take the idea and run with it.</div></li>
+          <li><span>3</span><div><b>Come back fresher.</b> Eyes, water, breath, movement. Rotate through what you need.</div></li>
+        </ul>
+        <p class="fine">Not medical advice. Stop if anything hurts.</p>
+      </section>
+    </div>
+
+    <footer class="foot">
+      <span>PUMZI <b id="version">0.1.0</b> · MIT</span>
+      <div class="foot-actions">
+        <button class="text" id="quit">Quit PUMZI</button>
+      </div>
+    </footer>
+  </div>
+
+  <div class="toast" id="toast" role="status"></div>
+  <script src="bridge.js"></script>
+  <script src="dashboard.js"></script>
+</body>
+</html>

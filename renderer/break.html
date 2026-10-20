@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="color-scheme" content="light dark">
+<title>PUMZI</title>
+<link rel="stylesheet" href="break.css">
+</head>
+<body class="bottom-right">
+  <div class="card" id="card">
+    <button class="skip" id="skip" aria-label="Skip this break" title="Skip">
+      <svg viewBox="0 0 12 12" aria-hidden="true"><path d="M2.5 2.5l7 7M9.5 2.5l-7 7"/></svg>
+    </button>
+
+    <div class="head">
+      <div class="fig" id="fig" aria-hidden="true"></div>
+      <div class="copy">
+        <div class="badge"><i></i><span id="cat">Eyes</span></div>
+        <h1 id="name">Look far away</h1>
+        <p class="instruction" id="instruction">Find the farthest thing you can see.</p>
+        <div class="specrow">
+          <span class="spec" id="spec">20 sec</span>
+          <button class="howto" id="howto" aria-expanded="false">
+            <span id="howtoLabel">How to</span>
+            <svg viewBox="0 0 10 10" aria-hidden="true"><path d="M2 4l3 3 3-3"/></svg>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div class="steps" id="steps">
+      <div class="steps-inner">
+        <h2>Steps</h2>
+        <ol id="stepList"></ol>
+        <div class="tip" id="tip"><strong>Tip.</strong> <span id="tipText"></span></div>
+        <p class="safety">Stop if anything hurts. This is a nudge, not medical advice.</p>
+      </div>
+    </div>
+
+    <div class="foot">
+      <div class="timebox">
+        <div class="time" id="time">0:20</div>
+        <div class="count" id="count"></div>
+      </div>
+      <div class="controls" id="controls">
+        <button class="ghost" id="snooze">Snooze</button>
+        <button class="primary" id="primary">Start</button>
+      </div>
+    </div>
+
+    <div class="donebar" id="donebar" aria-live="polite">
+      <div class="check">
+        <svg viewBox="0 0 20 20" aria-hidden="true"><circle cx="10" cy="10" r="9"/><path d="M6 10.2l2.6 2.6L14.3 7"/></svg>
+      </div>
+      <div class="donetext"><b id="doneTitle">Nice!</b><span id="doneSub">That's one today.</span></div>
+    </div>
+
+    <div class="progress" id="progress"><div id="bar"></div></div>
+  </div>
+  <div class="toast" id="toast"></div>
+
+  <script src="bridge.js"></script>
+  <script src="break.js"></script>
+</body>
+</html>

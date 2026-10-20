@@ -1,0 +1,23 @@
+[package]
+name = "pumzi"
+version = "0.1.0"
+description = "Pomodoro focus tasks with built-in micro-breaks"
+authors = ["PUMZI"]
+license = "MIT"
+edition = "2021"
+rust-version = "1.77"
+
+[build-dependencies]
+tauri-build = { version = "2", features = [] }
+
+[dependencies]
+tauri = { version = "2", features = ["tray-icon", "image-png", "macos-private-api"] }
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+chrono = { version = "0.4", features = ["serde"] }
+rand = "0.8"
+rust-embed = "8"
+auto-launch = "0.5"
+
+[features]
+custom-protocol = ["tauri/custom-protocol"]

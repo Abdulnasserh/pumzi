@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="96" height="96" viewBox="0 0 96 96" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+  <circle cx="48" cy="27" r="13" fill="#FBEFE7"/>
+  <path d="M42 26 q3 2 6 0" stroke-width="2.2"/>
+  <path d="M49 26 q3 2 6 0" stroke-width="2.2"/>
+  <path d="M43 33 q5 3 10 0" stroke-width="2.2"/>
+  <path d="M28 76 q2 -22 20 -24 q18 2 20 24" fill="#F7D7C4"/>
+  <g stroke="#D97757" stroke-width="2.6">
+    <g>
+      <path d="M15 58 a16 16 0 0 1 13 -22"/>
+      <path d="M24 31 l5 4 -4 5"/>
+      <animateTransform attributeName="transform" type="rotate" values="0 24 47;0 24 47;-8 24 47;0 24 47" dur="3s" repeatCount="indefinite"/>
+    </g>
+    <g>
+      <path d="M81 58 a16 16 0 0 0 -13 -22"/>
+      <path d="M72 31 l-5 4 4 5"/>
+      <animateTransform attributeName="transform" type="rotate" values="0 72 47;0 72 47;8 72 47;0 72 47" dur="3s" repeatCount="indefinite"/>
+    </g>
+  </g>
+  <g stroke="#D97757" opacity="0.55" stroke-width="2">
+    <path d="M37 66 q11 5 22 0"/>
+    <path d="M40 71 q8 3 16 0"/>
+  </g>
+</svg>

@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="96" height="96" viewBox="0 0 96 96" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+  <circle cx="48" cy="46" r="25" fill="#FBF3E6"/>
+  <path d="M35 44 q4 4 8 0" stroke-width="2.6"/>
+  <path d="M53 44 q4 4 8 0" stroke-width="2.6"/>
+  <path d="M42 58 q6 4 12 0" stroke-width="2.6"/>
+  <g fill="#F5D9B8" stroke="currentColor">
+    <path d="M20 62 q-4 -16 8 -22 q4 8 12 8 l2 14 q-10 8 -22 0 z">
+      <animateTransform attributeName="transform" type="translate" values="0 0;0 -1.5;0 0" dur="4s" repeatCount="indefinite"/>
+    </path>
+    <path d="M76 62 q4 -16 -8 -22 q-4 8 -12 8 l-2 14 q10 8 22 0 z">
+      <animateTransform attributeName="transform" type="translate" values="0 0;0 -1.5;0 0" dur="4s" repeatCount="indefinite"/>
+    </path>
+  </g>
+  <g stroke="#4C7DF0" opacity="0.65">
+    <circle cx="48" cy="46" r="30" stroke-dasharray="2 5">
+      <animate attributeName="r" values="29;31;29" dur="4s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.3;0.7;0.3" dur="4s" repeatCount="indefinite"/>
+    </circle>
+    <path d="M40 20 q8 -5 16 0" />
+    <path d="M42 13 q6 -3 12 0" opacity="0.5"/>
+  </g>
+</svg>

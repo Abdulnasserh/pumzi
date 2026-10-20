@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="96" height="96" viewBox="0 0 96 96" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+  <g transform="translate(48 48)">
+    <path d="M-31 0 Q0 -19 31 0 Q0 19 -31 0 Z" fill="#F4F7FF"/>
+    <circle cx="0" cy="0" r="9" fill="#4C7DF0" stroke="none"/>
+    <circle cx="-3" cy="-3" r="2.4" fill="#FFFFFF" stroke="none"/>
+    <g>
+      <animateTransform attributeName="transform" type="rotate" values="0;0;360;360" keyTimes="0;0.08;0.92;1" dur="5s" repeatCount="indefinite"/>
+      <circle cx="13" cy="0" r="2" fill="#4C7DF0" stroke="none" opacity="0.65"/>
+    </g>
+    <circle r="19" stroke="#4C7DF0" stroke-width="1.4" stroke-dasharray="2 4" opacity="0.5"/>
+  </g>
+  <g stroke="#4C7DF0" opacity="0.6">
+    <path d="M18 76 q10 2 16 -3"/>
+    <path d="M78 76 q-10 2 -16 -3"/>
+  </g>
+</svg>

@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="96" height="96" viewBox="0 0 96 96" fill="none" stroke="#2B2420" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+  <g stroke="currentColor">
+    <path d="M8 50 Q30 32 52 50 Q30 68 8 50 Z" fill="#F4F7FF" style="stroke: currentColor"/>
+    <g>
+      <circle cx="30" cy="50" r="8" fill="#4C7DF0" stroke="none"/>
+      <circle cx="27" cy="47" r="2.4" fill="#FFFFFF" stroke="none"/>
+      <animateTransform attributeName="transform" type="translate" values="0 0;12 1;12 1;-8 1;-8 1;0 0" keyTimes="0;0.32;0.46;0.78;0.9;1" dur="7s" repeatCount="indefinite"/>
+    </g>
+  </g>
+  <g stroke="currentColor">
+    <path d="M58 50 L78 38" stroke-dasharray="2 4"/>
+    <path d="M70 60 l6 -11 6 11" fill="none"/>
+    <path d="M78 58 l7 -9 7 9" fill="none"/>
+    <circle cx="83" cy="34" r="4" fill="#F2C14E" stroke="currentColor"/>
+  </g>
+  <g opacity="0.55" stroke="#4C7DF0">
+    <path d="M12 76 q6 -4 12 0 t12 0 t12 0 t12 0 t12 0" stroke-dasharray="1 5">
+      <animate attributeName="stroke-dashoffset" values="0;-18" dur="3s" repeatCount="indefinite"/>
+    </path>
+  </g>
+  <text x="10" y="88" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="9" font-weight="650" fill="#4C7DF0" stroke="none">20 ft</text>
+</svg>

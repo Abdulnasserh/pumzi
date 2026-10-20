@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="96" height="96" viewBox="0 0 96 96" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+  <defs>
+    <clipPath id="glass">
+      <path d="M30 26 L66 26 L61 80 Q48 84 35 80 Z"/>
+    </clipPath>
+  </defs>
+  <path d="M30 26 L66 26 L61 80 Q48 84 35 80 Z" fill="#F7FBFA"/>
+  <g clip-path="url(#glass)">
+    <rect x="28" y="72" width="40" height="16" fill="#2A9D8F" opacity="0.85">
+      <animate attributeName="y" values="74;46;46;74" keyTimes="0;0.4;0.75;1" dur="6s" repeatCount="indefinite"/>
+    </rect>
+    <path d="M28 48 q6 -3 10 0 t10 0 t10 0 t10 0" stroke="#7FD8C9" stroke-width="2" fill="none" opacity="0.9">
+      <animate attributeName="d" values="M28 48 q6 -3 10 0 t10 0 t10 0 t10 0;M28 50 q6 -3 10 0 t10 0 t10 0 t10 0;M28 48 q6 -3 10 0 t10 0 t10 0 t10 0" dur="3s" repeatCount="indefinite"/>
+    </path>
+    <circle cx="43" cy="58" r="2" fill="#7FD8C9" stroke="none">
+      <animate attributeName="cy" values="66;38;66" dur="6s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="53" cy="52" r="1.5" fill="#7FD8C9" stroke="none">
+      <animate attributeName="cy" values="60;34;60" dur="7s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+  <path d="M30 26 L66 26 L61 80 Q48 84 35 80 Z"/>
+  <path d="M48 8 q-7 9 0 14 q7 -5 0 -14 z" fill="#2A9D8F" stroke="currentColor">
+    <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.15;0.45;0.6" dur="3s" repeatCount="indefinite"/>
+    <animateTransform attributeName="transform" type="translate" values="0 -4;0 3;0 3;0 -4" keyTimes="0;0.45;0.6;1" dur="3s" repeatCount="indefinite"/>
+  </path>
+  <path d="M22 34 q-4 10 2 14" stroke="#2A9D8F" opacity="0.5"/>
+  <path d="M74 34 q4 10 -2 14" stroke="#2A9D8F" opacity="0.5"/>
+</svg>

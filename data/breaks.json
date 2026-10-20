@@ -1,0 +1,386 @@
+{
+  "categories": {
+    "eyes": {
+      "name": "Eyes",
+      "blurb": "Reset focus and blink again.",
+      "color": "#4C7DF0"
+    },
+    "hydration": {
+      "name": "Hydration",
+      "blurb": "Water, and a reason to stand up.",
+      "color": "#2A9D8F"
+    },
+    "breathing": {
+      "name": "Breathing",
+      "blurb": "Downshift your nervous system.",
+      "color": "#8B5CF6"
+    },
+    "movement": {
+      "name": "Movement",
+      "blurb": "Undo some of the sitting.",
+      "color": "#D97757"
+    }
+  },
+  "breaks": [
+    {
+      "id": "far-focus",
+      "category": "eyes",
+      "name": "Look far away",
+      "instruction": "Find the farthest thing you can see. Let your eyes soften.",
+      "spec": "20 sec",
+      "durationSeconds": 20,
+      "figure": "figures/eyes/far-focus.svg",
+      "steps": [
+        "Look away from your screen at something at least 20 feet away. Out a window is ideal.",
+        "Focus on it for 20 seconds. Let the detail go and just hold the distance.",
+        "Blink a few times before you come back to the screen."
+      ],
+      "tip": "Distance is what relaxes the focusing muscle. Scrolling on your phone keeps it clenched."
+    },
+    {
+      "id": "blink-reset",
+      "category": "eyes",
+      "name": "Blink reset",
+      "instruction": "Blink slowly ten times, then squeeze your eyes shut for two seconds.",
+      "spec": "20 sec",
+      "durationSeconds": 20,
+      "figure": "figures/eyes/blink.svg",
+      "steps": [
+        "Keep looking at the screen, or close your eyes, it doesn't matter.",
+        "Blink slowly and completely ten times. Feel the eyelid meet the lower lid each time.",
+        "Finish with your eyes squeezed gently shut for two seconds, then open."
+      ],
+      "tip": "People blink about a third as often at a screen. Dry, gritty eyes are usually just missed blinks."
+    },
+    {
+      "id": "palming",
+      "category": "eyes",
+      "name": "Palming",
+      "instruction": "Cup your palms over closed eyes and breathe in the dark.",
+      "spec": "45 sec",
+      "durationSeconds": 45,
+      "figure": "figures/eyes/palm.svg",
+      "steps": [
+        "Rub your palms together until they feel warm.",
+        "Close your eyes and cup your palms over them without pressing on the eyeballs.",
+        "Let your fingers rest on your forehead and the heels of your hands on your cheekbones.",
+        "Breathe slowly in the dark for 45 seconds."
+      ],
+      "tip": "The point is darkness and rest, not pressure. If you see light through your fingers, your hands aren't cupped enough."
+    },
+    {
+      "id": "eye-circles",
+      "category": "eyes",
+      "name": "Eye circles",
+      "instruction": "Roll your eyes in slow, easy circles. Reverse halfway.",
+      "spec": "30 sec",
+      "durationSeconds": 30,
+      "figure": "figures/eyes/roll.svg",
+      "steps": [
+        "Look up, then slowly trace a big circle with your eyes: up, right, down, left.",
+        "Make four slow circles clockwise, blinking whenever you need to.",
+        "Switch direction and make four circles the other way."
+      ],
+      "tip": "Keep it slow and stop if you feel a headache coming on. Fast eye movements are not the goal."
+    },
+    {
+      "id": "sip",
+      "category": "hydration",
+      "name": "Sip of water",
+      "instruction": "Drink a full glass of water. Slowly, away from your screen.",
+      "spec": "30 sec",
+      "durationSeconds": 30,
+      "figure": "figures/hydration/water.svg",
+      "steps": [
+        "Pick up your glass or bottle and take a few slow sips.",
+        "Keep your eyes off the screen while you drink.",
+        "Finish the glass if you can. If it's empty, that's your refill cue."
+      ],
+      "tip": "Mild dehydration feels a lot like afternoon brain fog. Water first, coffee second."
+    },
+    {
+      "id": "refill",
+      "category": "hydration",
+      "name": "Refill your bottle",
+      "instruction": "Get up, walk to the water, and refill. Leave your phone.",
+      "spec": "2 min",
+      "durationSeconds": 120,
+      "figure": "figures/hydration/refill.svg",
+      "steps": [
+        "Stand up and take your bottle or glass to the nearest water source.",
+        "Refill it. Take the long way back if you can.",
+        "Set it down where you'll see it, then sit back down."
+      ],
+      "tip": "This is a two-for-one: hydration plus a short walk plus a break from the screen."
+    },
+    {
+      "id": "window-water",
+      "category": "hydration",
+      "name": "Water by the window",
+      "instruction": "Sip water while you look out a window for a minute.",
+      "spec": "1 min",
+      "durationSeconds": 60,
+      "figure": "figures/hydration/window.svg",
+      "steps": [
+        "Take a glass of water to the nearest window or the furthest view in the room.",
+        "Drink slowly while you look at something distant.",
+        "Try to notice three things outside or across the room before you return."
+      ],
+      "tip": "Combines hydration with the 20-20-20 eye reset. Good one when you're too busy for a walk."
+    },
+    {
+      "id": "box-breathing",
+      "category": "breathing",
+      "name": "Box breathing",
+      "instruction": "In for 4, hold 4, out for 4, hold 4. Five rounds.",
+      "spec": "1 min",
+      "durationSeconds": 60,
+      "figure": "figures/breathing/box.svg",
+      "steps": [
+        "Sit tall and let your shoulders drop.",
+        "Breathe in through your nose for a count of 4.",
+        "Hold for 4. Breathe out slowly for 4. Hold empty for 4.",
+        "Repeat for five rounds, or until the timer ends."
+      ],
+      "tip": "If 4 seconds feels long, use 3. The even rhythm matters more than the number."
+    },
+    {
+      "id": "physiological-sigh",
+      "category": "breathing",
+      "name": "Physiological sigh",
+      "instruction": "Two inhales through the nose, then one long sigh out. Three times.",
+      "spec": "30 sec",
+      "durationSeconds": 30,
+      "figure": "figures/breathing/sigh.svg",
+      "steps": [
+        "Breathe in through your nose until your lungs feel about 80% full.",
+        "Add a second short sniff of air on top, without exhaling first.",
+        "Let it all out through your mouth in a long, slow sigh.",
+        "Do three of these."
+      ],
+      "tip": "The double inhale reinflates tiny air sacs and the long exhale slows your heart. Fastest reset there is."
+    },
+    {
+      "id": "four-seven-eight",
+      "category": "breathing",
+      "name": "4-7-8 breathing",
+      "instruction": "In for 4, hold for 7, out for 8. Four rounds.",
+      "spec": "1 min",
+      "durationSeconds": 60,
+      "figure": "figures/breathing/478.svg",
+      "steps": [
+        "Sit back and rest your tongue behind your top front teeth.",
+        "Breathe in through your nose for 4.",
+        "Hold for 7. Then breathe out through your mouth for 8.",
+        "Repeat four times."
+      ],
+      "tip": "If you get lightheaded, shorten the counts. Don't force a bigger breath than is comfortable."
+    },
+    {
+      "id": "five-senses",
+      "category": "breathing",
+      "name": "Five-senses reset",
+      "instruction": "Name 5 things you see, 4 you feel, 3 you hear, 2 you smell, 1 you taste.",
+      "spec": "1 min",
+      "durationSeconds": 60,
+      "figure": "figures/breathing/senses.svg",
+      "steps": [
+        "Look around and silently name five things you can see.",
+        "Notice four things you can feel: your feet, the chair, your sleeves, the air.",
+        "Listen for three sounds. Then two smells, then one taste.",
+        "Take one slow breath before you go back."
+      ],
+      "tip": "This pulls attention out of the task loop and into your body. Useful when you're stuck or frazzled."
+    },
+    {
+      "id": "chin-tuck",
+      "category": "movement",
+      "name": "Chin tucks",
+      "instruction": "Slide your head straight back, like a double chin.",
+      "spec": "10 slow reps",
+      "durationSeconds": 45,
+      "figure": "figures/rigatoni/chin-tuck.svg",
+      "steps": [
+        "Sit or stand tall with your shoulders relaxed and your eyes looking straight ahead.",
+        "Without tipping your head up or down, glide your chin straight back. Yes, it gives you a double chin.",
+        "Hold for 2 or 3 seconds. You should feel a gentle stretch where your skull meets your neck.",
+        "Let your head glide forward to neutral. That's one rep."
+      ],
+      "tip": "Keep your eyes level the whole time. If you're nodding down, you're doing a different move."
+    },
+    {
+      "id": "doorway",
+      "category": "movement",
+      "name": "Doorway stretch",
+      "instruction": "Forearms on a door frame, lean through gently.",
+      "spec": "30 sec",
+      "durationSeconds": 30,
+      "figure": "figures/rigatoni/doorway.svg",
+      "steps": [
+        "Stand in an open doorway. Raise your arms so your elbows are at shoulder height and bent to about 90 degrees.",
+        "Rest your forearms flat on each side of the frame, palms facing forward.",
+        "Step one foot through and slowly lean forward until you feel a stretch across your chest and the front of your shoulders.",
+        "Hold for 30 seconds and breathe normally. Step back to release."
+      ],
+      "tip": "Aim for a gentle stretch, not a strain, and don't let your lower back arch. No doorway nearby? Do one arm at a time against a wall corner."
+    },
+    {
+      "id": "scap",
+      "category": "movement",
+      "name": "Scap squeezes",
+      "instruction": "Pinch your shoulder blades back and down, then let go.",
+      "spec": "15 reps, 2 sec hold",
+      "durationSeconds": 50,
+      "figure": "figures/rigatoni/scap.svg",
+      "steps": [
+        "Sit or stand tall. Let your arms hang, or bend your elbows to about 90 degrees if that's easier.",
+        "Squeeze your shoulder blades back and slightly down, like you're pinching a pencil between them.",
+        "Hold for 2 seconds.",
+        "Relax completely, then repeat. Do 15."
+      ],
+      "tip": "Don't shrug your shoulders up toward your ears or push your ribs forward. The move is small and happens in your upper back."
+    },
+    {
+      "id": "walk",
+      "category": "movement",
+      "name": "Walkaround",
+      "instruction": "Get up and walk. Refill your water, rest your eyes.",
+      "spec": "2 min",
+      "durationSeconds": 120,
+      "figure": "figures/rigatoni/walk.svg",
+      "steps": [
+        "Stand up and walk anywhere for 2 minutes. A lap around the room or a water refill both count.",
+        "Let your arms swing and your shoulders drop.",
+        "On the way, look at something at least 20 feet away for about 20 seconds to give your eyes a break."
+      ],
+      "tip": "Leave your phone at the desk. This one only works if your eyes get a break too."
+    },
+    {
+      "id": "t-ext",
+      "category": "movement",
+      "name": "Thoracic extension",
+      "instruction": "Hands behind your head, arch back over your chair.",
+      "spec": "10 reps",
+      "durationSeconds": 40,
+      "figure": "figures/rigatoni/t-ext.svg",
+      "steps": [
+        "Sit all the way back so the top of your chair's backrest touches your mid back, just below your shoulder blades.",
+        "Lace your fingers behind your head with your elbows pointing forward. Your hands support your neck, they don't pull it.",
+        "Gently lean back over the backrest, lifting your chest toward the ceiling.",
+        "Pause for a breath, then sit back up. Do 10."
+      ],
+      "tip": "Bend from your upper back, not your lower back or neck. If your chair reclines or rolls, brace it against something first or skip this one."
+    },
+    {
+      "id": "hip-flexor",
+      "category": "movement",
+      "name": "Hip flexor stretch",
+      "instruction": "Split stance, tuck your hips and push them forward.",
+      "spec": "30 sec each side",
+      "durationSeconds": 60,
+      "figure": "figures/rigatoni/hip-flexor.svg",
+      "steps": [
+        "Stand with one foot a big step in front of the other, both feet pointing forward. Hold your desk if you want.",
+        "Bend your front knee a little and keep your back leg long.",
+        "Tuck your tailbone under by squeezing the glute on your back leg, then gently shift your hips forward.",
+        "You should feel it at the front of your back hip. Hold 30 seconds, then switch legs."
+      ],
+      "tip": "Keep your chest tall. Arching your lower back to go deeper just moves the stretch somewhere it doesn't help."
+    },
+    {
+      "id": "neck-side",
+      "category": "movement",
+      "name": "Neck side stretch",
+      "instruction": "Ear toward shoulder, other shoulder stays down.",
+      "spec": "20 sec each side",
+      "durationSeconds": 40,
+      "figure": "figures/rigatoni/neck-side.svg",
+      "steps": [
+        "Sit or stand tall with your shoulders relaxed.",
+        "Slowly tilt your head to bring your right ear toward your right shoulder. Keep looking forward.",
+        "Keep your left shoulder down. For a little more, reach your left hand toward the floor.",
+        "Hold for 20 seconds, come back to center slowly, then do the other side."
+      ],
+      "tip": "Don't lift your shoulder up to meet your ear, and don't pull on your head with your hand."
+    },
+    {
+      "id": "calf-raise",
+      "category": "movement",
+      "name": "Calf raises",
+      "instruction": "Rise up onto your toes, lower slowly.",
+      "spec": "20 reps",
+      "durationSeconds": 40,
+      "figure": "figures/rigatoni/calf-raise.svg",
+      "steps": [
+        "Stand tall with your feet hip-width apart. Rest a hand on your desk or a wall for balance.",
+        "Press through the balls of your feet and rise up as high as you can onto your toes.",
+        "Pause for a second at the top.",
+        "Lower slowly, taking about 2 seconds, until your heels touch down. Do 20."
+      ],
+      "tip": "Keep your weight over your big toes so your ankles don't roll outward."
+    },
+    {
+      "id": "shoulder-rolls",
+      "category": "movement",
+      "name": "Shoulder rolls",
+      "instruction": "Roll your shoulders back in big, slow circles.",
+      "spec": "10 each way",
+      "durationSeconds": 30,
+      "figure": "figures/movement/shoulder-roll.svg",
+      "steps": [
+        "Sit or stand tall with your arms relaxed.",
+        "Lift your shoulders toward your ears, roll them back, then let them drop.",
+        "Make ten slow circles backward.",
+        "Reverse and make ten forward."
+      ],
+      "tip": "Big and slow beats fast and small. Let your shoulder blades actually move."
+    },
+    {
+      "id": "wrist-release",
+      "category": "movement",
+      "name": "Wrist release",
+      "instruction": "Stretch your fingers, then flex each wrist gently.",
+      "spec": "30 sec",
+      "durationSeconds": 30,
+      "figure": "figures/movement/wrist.svg",
+      "steps": [
+        "Spread your fingers wide and hold for three seconds. Make a loose fist, then spread again.",
+        "Turn your right palm up and use your left hand to gently draw the fingers down.",
+        "Switch hands. Then shake both hands out for a few seconds."
+      ],
+      "tip": "Keep the stretch gentle. If you feel tingling or numbness, stop and mention it to a doctor."
+    },
+    {
+      "id": "desk-pushup",
+      "category": "movement",
+      "name": "Desk push-ups",
+      "instruction": "Hands on the desk, lower your chest, press back.",
+      "spec": "10 reps",
+      "durationSeconds": 40,
+      "figure": "figures/movement/desk-pushup.svg",
+      "steps": [
+        "Stand an arm's length from your desk and put both palms on the edge, shoulder-width apart.",
+        "Walk your feet back until your body is one straight line.",
+        "Bend your elbows and lower your chest toward the desk.",
+        "Press back up. Do 10, keeping your core braced and your neck long."
+      ],
+      "tip": "Make sure the desk can't slide. If it has wheels, brace it against a wall first."
+    },
+    {
+      "id": "stand-reach",
+      "category": "movement",
+      "name": "Stand and reach",
+      "instruction": "Stand tall, reach overhead, then lean gently side to side.",
+      "spec": "30 sec",
+      "durationSeconds": 30,
+      "figure": "figures/movement/stand-reach.svg",
+      "steps": [
+        "Stand up and reach both arms toward the ceiling.",
+        "Take a breath in and lengthen through your ribs.",
+        "Lean a few inches to the left, then to the right, like a slow pendulum.",
+        "Let your arms come down and shake them out."
+      ],
+      "tip": "Keep your ribs stacked over your hips instead of arching your lower back."
+    }
+  ]
+}

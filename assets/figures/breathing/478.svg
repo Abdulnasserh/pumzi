@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="96" height="96" viewBox="0 0 96 96" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+  <circle cx="48" cy="46" r="27" fill="#F1ECFF"/>
+  <circle cx="48" cy="46" r="20" stroke="#8B5CF6" stroke-dasharray="4 5" opacity="0.6">
+    <animate attributeName="r" values="18;22;18" dur="6s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0.35;0.8;0.35" dur="6s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="48" cy="46" r="11" fill="#8B5CF6" opacity="0.85" stroke="none">
+    <animate attributeName="r" values="9;13;9" dur="6s" repeatCount="indefinite"/>
+  </circle>
+  <g font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="9" font-weight="700" fill="#8B5CF6" stroke="none" text-anchor="middle">
+    <text x="48" y="15">4</text>
+    <text x="82" y="49">7</text>
+    <text x="48" y="89">8</text>
+  </g>
+  <g stroke="#8B5CF6" stroke-width="2" opacity="0.55">
+    <path d="M48 20 v5"/>
+    <path d="M75 46 h5"/>
+    <path d="M48 72 v5"/>
+  </g>
+</svg>

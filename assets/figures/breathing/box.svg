@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="96" height="96" viewBox="0 0 96 96" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+  <g transform="translate(48 48)">
+    <g>
+      <animateTransform attributeName="transform" type="scale" values="1;1;1.22;1.22;1;1;1" keyTimes="0;0.02;0.25;0.5;0.75;0.98;1" dur="16s" repeatCount="indefinite"/>
+      <rect x="-22" y="-22" width="44" height="44" rx="13" fill="#F1ECFF"/>
+      <rect x="-22" y="-22" width="44" height="44" rx="13" fill="#8B5CF6" opacity="0.16"/>
+    </g>
+    <circle r="13" fill="#8B5CF6" opacity="0.85" stroke="none">
+      <animate attributeName="r" values="13;13;18;18;13;13;13" keyTimes="0;0.02;0.25;0.5;0.75;0.98;1" dur="16s" repeatCount="indefinite"/>
+    </circle>
+    <circle r="4.5" fill="#FFFFFF" stroke="none" opacity="0.9"/>
+  </g>
+  <g stroke="#8B5CF6" opacity="0.55" stroke-width="2">
+    <path d="M30 14 q4 -4 8 0" />
+    <path d="M58 14 q4 -4 8 0" />
+    <circle cx="48" cy="11" r="1.6" fill="#8B5CF6" stroke="none"/>
+  </g>
+</svg>

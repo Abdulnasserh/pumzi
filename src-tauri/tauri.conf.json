@@ -1,0 +1,28 @@
+{
+  "$schema": "https://schema.tauri.app/config/2",
+  "productName": "PUMZI",
+  "version": "0.1.0",
+  "identifier": "com.pumzi.app",
+  "build": {
+    "frontendDist": "../renderer"
+  },
+  "app": {
+    "withGlobalTauri": true,
+    "macOSPrivateApi": true,
+    "windows": [],
+    "security": {
+      "csp": null
+    }
+  },
+  "bundle": {
+    "active": true,
+    "targets": "all",
+    "icon": ["icons/icon.icns", "icons/icon.ico", "icons/icon.png"],
+    "category": "Productivity",
+    "shortDescription": "Gentle eye, hydration, breathing, and movement breaks.",
+    "longDescription": "PUMZI is a Pomodoro focus app that schedules eye, hydration, breathing, and movement breaks around your tasks.",
+    "macOS": {
+      "minimumSystemVersion": "10.15"
+    }
+  }
+}
