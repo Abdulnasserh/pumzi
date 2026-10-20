@@ -118,6 +118,23 @@ Settings live in the platform app-data directory:
 
 Stats are stored next to the config in `stats.json`. Tasks and the active Pomodoro live in `tasks.json`.
 
+## Uninstalling
+
+PUMZI is fully self-contained — nothing spreads into your system, so leaving is as easy as arriving:
+
+1. Quit it from the tray/menu-bar icon → **Quit**.
+2. Delete `Pumzi.app` (drag it from /Applications to Trash). If you ran it with `cargo run`, nothing was installed system-wide — closing the process is enough.
+3. Optional: remove settings and stats:
+
+   ```sh
+   rm -rf "~/Library/Application Support/com.pumzi.app"   # macOS
+   ```
+
+   (Windows: `%APPDATA%\com.pumzi.app`, Linux: `~/.config/com.pumzi.app`)
+4. If you enabled **launch at login**, toggle it off in the dashboard first (or remove the entry in System Settings → Login Items).
+
+No daemons, no leftovers.
+
 ## Project layout
 
 ```
